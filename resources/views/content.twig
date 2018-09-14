@@ -29,7 +29,7 @@
     <span class="button__text">{{ block.text }}</span>
 
     {% if (block.icon.value or block.image.id) and block.placement.key in ['bottom', 'right'] %}
-        <span class="button_icon button_icon--{{ block.placement.key }}">
+        <span class="button__icon button__icon--{{ block.placement.key }}">
             {% if block.image.id %}
                 {{ block.image.make.inline|raw }}
             {% else %}
