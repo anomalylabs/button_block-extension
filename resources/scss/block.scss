@@ -121,21 +121,6 @@ $colors: (
     }
 
     /**
-     * Icon Placement
-     */
-    .button__icon {
-        img {
-            max-height: 1.5em;
-            vertical-align: middle;
-        }
-    }
-
-    .button__icon--top,
-    .button__icon--bottom {
-        display: block;
-    }
-
-    /**
      * Border Radius
      */
     .button__border_radius--square {
@@ -155,14 +140,26 @@ $colors: (
      */
     .button__icon {
         display: inline-block;
+
+        img {
+            max-height: 1.5em;
+            vertical-align: middle;
+        }
+    }
+
+    .button__icon--top,
+    .button__icon--bottom {
+        display: block;
     }
 
     .button__icon--left {
         margin-right: 0.5em;
+        margin-left: -0.25em;
     }
 
     .button__icon--right {
-        margin-right: 0.5em;
+        margin-left: 0.5em;
+        margin-right: -0.25em;
     }
 
     /**
