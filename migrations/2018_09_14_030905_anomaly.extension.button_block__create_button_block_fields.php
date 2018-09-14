@@ -35,7 +35,7 @@ class AnomalyExtensionButtonBlockCreateButtonBlockFields extends Migration
         'placement' => [
             'type'   => 'anomaly.field_type.select',
             'config' => [
-                'default_value' => 'right',
+                'default_value' => 'left',
                 'options'       => [
                     'top'    => 'anomaly.extension.button_block::field.placement.option.top',
                     'right'  => 'anomaly.extension.button_block::field.placement.option.right',
