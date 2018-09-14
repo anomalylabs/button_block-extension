@@ -10,7 +10,6 @@ return [
                     'entry_text',
                     'entry_url',
                     'entry_target',
-                    'configuration_size',
                 ],
             ],
             'icon'       => [
@@ -24,6 +23,7 @@ return [
             'design'     => [
                 'title'  => 'anomaly.extension.button_block::tab.design',
                 'fields' => [
+                    'configuration_size',
                     'configuration_theme',
                     'configuration_color',
                     'configuration_border_radius',
