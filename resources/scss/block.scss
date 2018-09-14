@@ -9,16 +9,6 @@
     }
 
     /**
-     * Button Themes
-     */
-    &.button_block--outline {
-        .button {
-            border: 3px solid;
-            background: transparent !important;
-        }
-    }
-
-    /**
      * Button Alignment
      */
     &.button_block--left {
@@ -44,27 +34,6 @@
     .button__icon--top,
     .button__icon--bottom {
         display: block;
-    }
-
-    /**
-     * Button Color
-     */
-    .button__color--secondary {
-        background-color: #cccccc;
-        border-color: #cccccc;
-        color: #555555;
-    }
-
-    .button__color--default {
-        background-color: #333;
-        border-color: #333;
-        color: #ffffff;
-    }
-
-    .button__color--primary {
-        background-color: #000;
-        border-color: #000;
-        color: #ffffff;
     }
 
     /**
@@ -109,5 +78,52 @@
     .button__size--large {
         font-size: 125%;
         padding: 2rem 5rem;
+    }
+
+    /**
+     * Button Color
+     */
+    .button__color--secondary {
+        background-color: #cccccc;
+        border-color: #cccccc;
+        color: #555555;
+    }
+
+    .button__color--default {
+        background-color: #333333;
+        border-color: #333333;
+        color: #ffffff;
+    }
+
+    .button__color--primary {
+        background-color: #000000;
+        border-color: #000000;
+        color: #ffffff;
+    }
+
+    /**
+     * Button Themes
+     */
+    &.button_block--outline {
+
+        .button {
+            border: 3px solid;
+            background: transparent !important;
+        }
+
+        .button__color--secondary {
+            color: #555555;
+            border-color: #555555;
+        }
+
+        .button__color--default {
+            color: #333333;
+            border-color: #333333;
+        }
+
+        .button__color--primary {
+            color: #000;
+            border-color: #000;
+        }
     }
 }
