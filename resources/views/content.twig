@@ -1,0 +1,58 @@
+{{ asset_add("styles.css", "anomaly.extension.button_block::scss/block.scss") }}
+{#{{ asset_add("scripts.js", "anomaly.extension.button_block::js/block.js") }}#}
+
+<style type="text/css">
+    {% if str_is('#*', block.button_color.value) %}
+    #button--{{ block.id }} {
+        background: {{ block.button_color }};
+        border-color: {{ block.button_color }};
+    }
+
+    {% endif %}
+
+    {% if str_is('#*', block.text_color.value) %}
+    #button--{{ block.id }} {
+        color: {{ block.text_color }};
+    }
+
+    {% endif %}
+</style>
+
+<a
+        id="button--{{ block.id }}"
+        rel="{{ block.rel }}"
+        title="{{ block.entry.title }}"
+        onclick="{{ block.onclick|raw }}"
+        href="{{ block.url.normalize }}"
+        target="{{ block.target ?: '_self' }}"
+        class="
+            {{ block.class }}
+            button
+            button__size--{{ block.size.key }}
+            button__color--{{ ltrim(block.text_color.value, '#') }}
+            button__border_radius--{{ block.border_radius.key ?: 'medium' }}
+        "
+        style="width: {{ block.width.value ?: 'auto' }};">
+
+    {% if (block.icon.value or block.image.id) and block.placement.key in ['top', 'left'] %}
+        <span class="button__icon button__icon--{{ block.placement.key }}">
+            {% if block.image.id %}
+                {{ block.image.make.inline|raw }}
+            {% else %}
+                {{ block.icon|raw }}
+            {% endif %}
+        </span>
+    {% endif %}
+
+    <span class="button__text">{{ block.text }}</span>
+
+    {% if (block.icon.value or block.image.id) and block.placement.key in ['bottom', 'right'] %}
+        <span class="button_icon button_icon--{{ block.placement.key }}">
+            {% if block.image.id %}
+                {{ block.image.make.inline|raw }}
+            {% else %}
+                {{ block.icon|raw }}
+            {% endif %}
+        </span>
+    {% endif %}
+</a>

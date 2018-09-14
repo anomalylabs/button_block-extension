@@ -1,0 +1,100 @@
+.block--button_block {
+
+    .button {
+        color: #ffffff;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        border-color: transparent;
+    }
+
+    /**
+     * Button Themes
+     */
+    &.button_block--outline {
+        .button {
+            border: 3px solid;
+            background: transparent !important;
+        }
+    }
+
+    /**
+     * Button Alignment
+     */
+    &.button_block--left {
+        text-align: left;
+    }
+
+    &.button_block--right {
+        text-align: right;
+    }
+
+    &.button_block--center,
+    &.button_block--justify {
+        text-align: center;
+    }
+
+    &.button_block--inline {
+        display: inline-block;
+    }
+
+    /**
+     * Icon Placement
+     */
+    .button__icon--top,
+    .button__icon--bottom {
+        display: block;
+    }
+
+    /**
+     * Button Color
+     */
+    .button__color-- {
+        background-color: #000000;
+        border-color: #000000;
+    }
+
+    /**
+     * Border Radius
+     */
+    .button__border_radius--square {
+        border-radius: 0;
+    }
+
+    .button__border_radius--rounded {
+        border-radius: 1000em;
+    }
+
+    /**
+     * Button Icons
+     */
+    .button__icon {
+        display: inline-block;
+    }
+
+    .button__icon--left {
+        margin-right: 0.5rem;
+    }
+
+    .button__icon--right {
+        margin-right: 0.5rem;
+    }
+
+    /**
+     * Button Sizes
+     */
+    .button__size--small {
+        font-size: 85%;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .button__size--medium {
+        font-size: 100%;
+        padding: 1rem 3rem;
+    }
+
+    .button__size--large {
+        font-size: 125%;
+        padding: 2rem 5rem;
+    }
+}

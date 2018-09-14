@@ -1,21 +1,45 @@
 <?php namespace Anomaly\ButtonBlockExtension;
 
-use Anomaly\Streams\Platform\Addon\Extension\Extension;
+use Anomaly\BlocksModule\Block\BlockExtension;
+use Anomaly\ButtonBlockExtension\Block\BlockModel;
 
-class ButtonBlockExtension extends Extension
+/**
+ * Class ButtonBlockExtension
+ *
+ * @link   http://pyrocms.com/
+ * @author PyroCMS, Inc. <support@pyrocms.com>
+ * @author Ryan Thompson <ryan@pyrocms.com>
+ */
+class ButtonBlockExtension extends BlockExtension
 {
 
     /**
-     * This extension provides...
+     * This extension provides a button
+     * block for the blocks module.
      *
-     * This should contain the dot namespace
-     * of the addon this extension is for followed
-     * by the purpose.variation of the extension.
-     *
-     * For example anomaly.module.store::gateway.stripe
-     *
-     * @var null|string
+     * @var string
      */
-    protected $provides = null;
+    protected $provides = 'anomaly.module.blocks::block.button';
+
+    /**
+     * The block view.
+     *
+     * @var string
+     */
+    protected $view = 'anomaly.extension.button_block::content';
+
+    /**
+     * The block wrapper.
+     *
+     * @var string
+     */
+    protected $wrapper = 'anomaly.extension.button_block::wrapper';
+
+    /**
+     * The block model.
+     *
+     * @var string
+     */
+    protected $model = BlockModel::class;
 
 }

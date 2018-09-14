@@ -11,13 +11,8 @@ class AnomalyExtensionButtonBlockCreateBlocksStream extends Migration
      * @var array
      */
     protected $stream = [
-        'slug' => 'blocks',
-         'title_column' => 'name',
-         'translatable' => true,
-         'versionable' => false,
-         'trashable' => false,
-         'searchable' => false,
-         'sortable' => false,
+        'slug'         => 'blocks',
+        'translatable' => true,
     ];
 
     /**
@@ -26,14 +21,24 @@ class AnomalyExtensionButtonBlockCreateBlocksStream extends Migration
      * @var array
      */
     protected $assignments = [
-        'name' => [
-            'translatable' => true,
+        'text',
+        'url',
+        'target'    => [
             'required' => true,
         ],
-        'slug' => [
-            'unique' => true,
+        'icon',
+        'image',
+        'placement' => [
             'required' => true,
         ],
+        'width',
+        'align'     => [
+            'required' => true,
+        ],
+        'classes',
+        'title',
+        'onclick',
+        'rel',
     ];
 
 }

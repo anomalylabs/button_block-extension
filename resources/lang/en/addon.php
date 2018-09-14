@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title'       => 'Button Block',
+    'title'       => 'Button',
     'name'        => 'Button Block Extension',
-    'description' => ''
+    'description' => 'A button block.',
 ];
