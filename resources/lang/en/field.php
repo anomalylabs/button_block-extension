@@ -17,7 +17,7 @@ return [
     'image'     => [
         'name'         => 'Image',
         'instructions' => 'Specify an icon image.',
-        'warning'      => 'This will override the icon selected above.',
+        'warning'      => 'This will override any icon specified above.',
     ],
     'width'     => [
         'name'         => 'Width',

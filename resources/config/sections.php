@@ -25,8 +25,7 @@ return [
                 'title'  => 'anomaly.extension.button_block::tab.design',
                 'fields' => [
                     'configuration_theme',
-                    'configuration_button_color',
-                    'configuration_text_color',
+                    'configuration_color',
                     'configuration_border_radius',
                     'entry_align',
                     'entry_width',

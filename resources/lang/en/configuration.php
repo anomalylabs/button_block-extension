@@ -1,15 +1,14 @@
 <?php
 
 return [
-    'button_color'  => [
-        'name'         => 'Button Color',
-        'placeholder'  => '#000000',
-        'instructions' => 'Specify the background color of the button.',
-    ],
-    'text_color'    => [
-        'name'         => 'Text Color',
-        'placeholder'  => '#ffffff',
-        'instructions' => 'Specify the text color of the button.',
+    'color'         => [
+        'name'         => 'Color',
+        'instructions' => 'Specify the button color.',
+        'option'       => [
+            'secondary' => 'Secondary',
+            'default'   => 'Default',
+            'primary'   => 'Primary',
+        ],
     ],
     'size'          => [
         'name'         => 'Size',

@@ -37,6 +37,16 @@ return [
             ],
         ],
     ],
-    'button_color'  => 'anomaly.field_type.colorpicker',
-    'text_color'    => 'anomaly.field_type.colorpicker',
+    'color'         => [
+        'required' => true,
+        'type'     => 'anomaly.field_type.select',
+        'config'   => [
+            'default_value' => 'default',
+            'options'       => [
+                'secondary' => 'anomaly.extension.button_block::configuration.color.option.secondary',
+                'default'   => 'anomaly.extension.button_block::configuration.color.option.default',
+                'primary'   => 'anomaly.extension.button_block::configuration.color.option.primary',
+            ],
+        ],
+    ],
 ];
