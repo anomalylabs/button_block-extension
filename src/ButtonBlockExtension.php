@@ -14,6 +14,13 @@ class ButtonBlockExtension extends BlockExtension
 {
 
     /**
+     * The extension category.
+     *
+     * @var string
+     */
+    protected $category = 'component';
+
+    /**
      * This extension provides a button
      * block for the blocks module.
      *
